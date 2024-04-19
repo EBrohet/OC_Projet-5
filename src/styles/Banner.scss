@@ -1,0 +1,15 @@
+.titre{
+    background-image: url("../assets/banner1.jpg");
+    background-position-y: 50%;
+    border-radius: 25px;
+    opacity: 0.6;
+    mix-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    max-width: 1240px;
+    height: 223px;
+    color: white;
+    font-size: 48px;
+}
