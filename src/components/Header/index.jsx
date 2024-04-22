@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import '../../styles/Header.scss'
 
@@ -7,8 +7,8 @@ function Header() {
     <div className='header'>
       <img className='logo' src={logo} alt="logo" />
       <nav className='navbar'>
-        <Link to="/" className='link'>Accueil</Link>
-        <Link to="/about" className='link'>A Propos</Link>
+        <NavLink to="/" className={({isActive}) => isActive ? 'underline link' : 'link'}>Accueil</NavLink>
+        <NavLink to="/about" className={({isActive}) => isActive ? 'underline link' : 'link'}>A Propos</NavLink>
       </nav>
     </div>
   )
