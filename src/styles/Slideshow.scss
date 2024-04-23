@@ -1,0 +1,44 @@
+.gallery{
+    margin: 50px 100px 30px 100px;
+    
+    .slide{
+        height: 415px;
+        display: none;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .image{
+        height: 415px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .arrow{
+        z-index: 1;
+        position: absolute;
+        top: 340px;
+    }
+
+    .prev-arrow{
+        left: 123px;
+        transform: rotate(-180deg);
+    }
+
+    .next-arrow{
+        right: 123px;
+    }
+
+    .number{
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+        top: 520px;
+        left: 708px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
