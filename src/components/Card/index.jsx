@@ -15,6 +15,7 @@ function Card() {
                     <Link key={id} to={`/accomodation/${id}`} className='card-link'>
                     <li>
                         <img src={cover} alt={title} />
+                        <div className='gradient'></div>
                         <p title={title}>{title}</p>
                     </li>
                     </Link>

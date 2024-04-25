@@ -7,7 +7,7 @@
     ul{
         display: grid;
         grid-template-columns: repeat(auto-fill, 340px);
-        grid-gap: 60px;
+        grid-gap: 50px 60px;
         padding: 0;
         margin: 0;
     
@@ -25,10 +25,20 @@
                 border-radius: 10px;
             }
 
-            p{
+            .gradient{
+                background-image: linear-gradient(#FFFFFF00 0%, #0A0A0A00 0%, #04040434 20.5%, #00000080 50%);
                 z-index: 1;
+                width: 340px;
+                height: 340px;
                 position: relative;
-                top: -80px;
+                top: -344px;
+                border-radius: 10px;
+            }
+
+            p{
+                z-index: 2;
+                position: relative;
+                top: -407px;
                 color: white;
                 font-size: 18px;
                 font-weight: bold;

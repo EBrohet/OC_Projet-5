@@ -1,18 +1,17 @@
-.about{
-    margin: 38px 208.5px;
-
-    ul{
-        padding: 0;
+.collapse{
     
+    ul{
+        display: flex;
+        padding: 0;
+
         li{
             list-style: none;
             background-color: #FF6060;
             color: white;
             border-radius: 5px;
-            margin-bottom: 30px;
-            padding: 10px 20px 8px 15px;
             font-size: 24px;
             font-weight: bold;
+            padding-right: 20px;
             height: 52px;
             display: flex;
             justify-content: space-between;
@@ -27,20 +26,52 @@
             background-color: #F6F6F645;
             border-radius: 10px 10px 5px 5px;
             padding: 77px 28px 20px 20px;
-            position: relative;
-            top: -100px;
             font-size: 18px;
             margin: 0;
             z-index: -1;
-            display: none;
+            position: relative;
         }
+    }
+}
+    
+.equip{
+    margin: 0 100px;
 
-        .masquer{
-            display: none;
+    ul{
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .open{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        width: 547px;
+        padding-left: 10px;
+    }
+
+    p{
+        top: -52px;
+        width: 527px;
+    }
+}
+
+.about{
+    margin: 38px 208.5px;
+
+    ul{
+        margin-bottom: 8px;
+        flex-direction: column;
+        gap: 30px;
+
+        li{
+            padding-left: 15px;
         }
-
-        .afficher{
-            display: block;
+       
+        p{
+            top: -82px;
         }
     }
 }
