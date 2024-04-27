@@ -1,77 +1,80 @@
 .collapse{
-    
-    ul{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+
+    h2{
+        list-style: none;
+        background-color: #FF6060;
+        color: white;
+        border-radius: 5px;
+        font-size: 24px;
+        padding-right: 20px;
+        height: 52px;
         display: flex;
-        padding: 0;
-
-        li{
-            list-style: none;
-            background-color: #FF6060;
-            color: white;
-            border-radius: 5px;
-            font-size: 24px;
-            font-weight: bold;
-            padding-right: 20px;
-            height: 52px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .rotate{
-                transform: rotate(180deg);
-            }
-        }
-
-        p{
-            background-color: #F6F6F645;
-            border-radius: 10px 10px 5px 5px;
-            padding: 77px 28px 20px 20px;
-            font-size: 18px;
-            margin: 0;
-            z-index: -1;
-            position: relative;
-        }
+        align-items: center;
+        margin: 0;
     }
+
+    .btn{
+        z-index: 1;
+        position: relative;
+    }
+
+    .rotate{
+        transform: rotate(180deg);
+    }
+
+    .message{
+        background-color: #F6F6F645;
+        border-radius: 10px 10px 5px 5px;
+        padding: 77px 28px 20px 20px;
+        font-size: 18px;
+        margin: 0;
+        z-index: -1;
+        position: relative;
+    }    
 }
-    
+
 .equip{
     margin: 0 100px;
 
-    ul{
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-
-    .open{
-        display: flex;
-        flex-direction: column;
-    }
-
-    li{
-        width: 547px;
+    h2{
+        width: 552px;
         padding-left: 10px;
+        margin: 24px 0 29px 0;
     }
 
-    p{
-        top: -52px;
-        width: 527px;
+    .btn{
+        top: -63.5px;
+        right: -536px;  
+    }
+
+    .message{
+        top: -102px;
+        width: 534px;
+
+        li{
+            list-style: none;
+        }
     }
 }
 
 .about{
-    margin: 38px 208.5px;
+    margin: 0 208.5px 16px 208.5px;
+    flex-direction: column;
+    gap: 8px;
 
-    ul{
-        margin-bottom: 8px;
-        flex-direction: column;
-        gap: 30px;
+    h2{
+        padding-left: 15px;
+    }
 
-        li{
-            padding-left: 15px;
-        }
-       
-        p{
-            top: -82px;
-        }
+    .btn{
+        top: -35.5px;
+        left: 978px;
+    }
+   
+    .message{
+        top: -74px;
     }
 }
