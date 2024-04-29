@@ -1,80 +1,84 @@
 .collapse{
     display: flex;
     padding: 0;
-    justify-content: space-between;
+    max-width: 1240px;
+    
+    .list{
+        width: 100%;
 
-    h2{
-        list-style: none;
-        background-color: #FF6060;
-        color: white;
-        border-radius: 5px;
-        font-size: 24px;
-        padding-right: 20px;
-        height: 52px;
-        display: flex;
-        align-items: center;
-        margin: 0;
-    }
-
-    .btn{
-        z-index: 1;
-        position: relative;
-    }
-
-    .rotate{
-        transform: rotate(180deg);
-    }
-
-    .message{
-        background-color: #F6F6F645;
-        border-radius: 10px 10px 5px 5px;
-        padding: 77px 28px 20px 20px;
-        font-size: 18px;
-        margin: 0;
-        z-index: -1;
-        position: relative;
-    }    
-}
-
-.equip{
-    margin: 0 100px;
-
-    h2{
-        width: 552px;
-        padding-left: 10px;
-        margin: 24px 0 29px 0;
-    }
-
-    .btn{
-        top: -63.5px;
-        right: -536px;  
-    }
-
-    .message{
-        top: -102px;
-        width: 534px;
-
-        li{
+        h2{
             list-style: none;
+            background-color: #FF6060;
+            color: white;
+            border-radius: 5px;
+            font-size: 24px;
+            padding-right: 20px;
+            margin: 0;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btn{
+                z-index: 1;
+            }
+
+            .rotate{
+                transform: rotate(180deg);
+            }
+    
+            &:active + .open{
+                max-height: 0px;
+            }
+        }
+
+        .open{
+            position: relative;
+            top: -52px;
+            max-height: 800px;
+            overflow: hidden;
+            transition: max-height 0.6s ease-in-out;
+
+            .message{
+                background-color: #F6F6F645;
+                border-radius: 10px 10px 5px 5px;
+                padding: 77px 28px 20px 20px;
+                font-size: 18px;
+                margin: 0;
+                z-index: -1;
+                position: relative;
+            }
         }
     }
 }
 
+.equip{
+    margin: 24px 100px 0px 100px;
+    gap: 76px;
+
+    .list{
+        margin-bottom: 50px;
+
+        h2{
+            padding-left: 10px;
+        }
+
+        li{
+            list-style: none;
+        }  
+    }
+
+    .show{
+        margin-bottom: 0;
+    }
+}
+
 .about{
-    margin: 0 208.5px 16px 208.5px;
+    margin: 0 208.5px 38px 208.5px;
     flex-direction: column;
-    gap: 8px;
+    gap: 30px;
 
     h2{
         padding-left: 15px;
-    }
-
-    .btn{
-        top: -35.5px;
-        left: 978px;
-    }
-   
-    .message{
-        top: -74px;
     }
 }

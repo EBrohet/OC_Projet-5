@@ -11,11 +11,15 @@ function Open({title, message}) {
     }
 
     return (
-        <div>
-            <h2>{title}</h2>
-            <img className={isOpen ? 'btn rotate' : 'btn'} src={arrow} alt='flèche' onClick={handleClick} />
+        <div className={isOpen ? 'list show' : 'list'}>
+            <h2>
+                {title}
+                <img className={isOpen ? 'btn rotate' : 'btn'} src={arrow} alt='flèche' onClick={handleClick} />
+            </h2>
             {isOpen && (
-                <p className='message'>{message}</p>
+                <div className='open'>
+                    <p className='message'>{message}</p>
+                </div>
             )}
         </div>   
     )
@@ -29,7 +33,7 @@ function Collapse({page, logement}) {
                 message={logement.description}>
             </Open>
             <Open 
-                title='Équipments' 
+                title='Équipements' 
                 message={logement.equipments.map((name, index) => (
                     <li key={index}>{name}</li>
                 ))}>

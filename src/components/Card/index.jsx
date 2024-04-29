@@ -2,8 +2,6 @@ import { Link, useParams } from 'react-router-dom';
 import logements from '../../datas/logements.json'
 import '../../styles/Card.scss'
 
-const card = logements.slice (0, 6);
-
 function Card() {
     let {appartId} = useParams()
 
@@ -11,7 +9,7 @@ function Card() {
         <div className='container'>
             {appartId}
             <ul>
-                {card.map(({id, title, cover}) =>
+                {logements.map(({id, title, cover}) =>
                     <Link key={id} to={`/accomodation/${id}`} className='card-link'>
                     <li>
                         <img src={cover} alt={title} />
