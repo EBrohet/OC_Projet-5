@@ -43,3 +43,38 @@
         font-weight: 500;
     }
 }
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .gallery{
+        margin: 27px 20px 15px 20px;
+        height: 255px;
+
+        .slide{
+            height: 255px;
+        }
+
+        .image{
+            height: 255px;
+        }
+
+        .arrow{
+            top: 211.5px;
+            height: 20px;
+        }
+
+        .prev-arrow{
+            left: 26px;
+        }
+    
+        .next-arrow{
+            right: 26px;
+        }
+
+        .number{
+            top: -45px;
+            font-size: 12px;
+        }
+    }
+}

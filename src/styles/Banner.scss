@@ -9,6 +9,7 @@
     margin: 50px 100px 43px 100px;
     max-width: 1240px;
     height: 223px;
+    padding: 0 16px;
 }
 
 .banner{
@@ -22,4 +23,23 @@
 
 .none{
     background-image: url("../assets/banner2.jpg");
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .global{
+        margin: 27px 20px 0 20px;
+        height: 111px;
+        justify-content: flex-start;
+        background-position-x: 35%;
+        background-position-y: 58%;
+    }
+
+    .banner{ 
+        .titre{
+            font-size: 24px;
+            max-width: 220px;
+        }
+    }
 }

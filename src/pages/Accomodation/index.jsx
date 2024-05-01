@@ -39,6 +39,7 @@ function Accomodation() {
                     </div>
                 </div>
             </div>
+            
             <Collapse logement={logement} />
         </div>
     ) : (

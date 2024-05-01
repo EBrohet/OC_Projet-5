@@ -76,4 +76,64 @@
 }
 
 
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .appart{
+        margin: 0 20px;
+        flex-direction: column;
 
+        h1{
+            font-size: 18px;
+            margin: 0;
+        }
+    
+        p{
+            font-size: 14px;
+            margin: 5px 0 0 0;
+        }
+
+        ul{
+            gap: 10px;
+            margin: 10px 0 16px 0;
+            flex-wrap: wrap;
+    
+            li{
+                font-size: 10px;
+                min-width: 84px;
+                height: 18px;
+                padding: 0 5px;
+            }
+        }
+
+        .host{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+            figure{
+                .host-image{
+                    width: 32px;
+                    height: 32px;
+                    margin-left: 10.5px;
+                }
+        
+                figcaption{
+                    font-size: 12px;
+                    width: 60px;
+                }
+            }
+
+            .rating{
+                justify-content: flex-start;
+                margin-top: 0;
+        
+                .star{
+                    margin-left: 0;
+                    margin-right: 4.5px;
+                    width: 13px;
+                }
+            }
+        }
+    }
+}

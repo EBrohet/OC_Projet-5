@@ -47,3 +47,36 @@
         }
     }
 }
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .container{
+        margin: 22px 20px 27px 20px;
+        padding: 0;
+        background-color: white;
+
+        ul{
+            grid-gap: 20px;
+            
+            li{
+                height: 255px;
+
+                img{
+                    width: 335px;
+                    height: 255px;
+                }
+
+                .gradient{
+                    width: 335px;
+                    height: 255px;             
+                    top: -259px;                   
+                }   
+
+                p{
+                    top: -314px;    
+                }
+            }
+        }
+    }
+}

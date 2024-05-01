@@ -20,3 +20,20 @@
         }
     }
 }
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .header {
+        margin: 20px;
+
+        .logo{
+            width: 145px;
+        }
+
+        .navbar{
+            gap: 26px;
+            font-size: 12px;
+        }
+    }
+}
