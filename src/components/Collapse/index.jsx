@@ -11,13 +11,13 @@ function Open({title, message}) {
     }
 
     return (
-        <div className='list'>
+        <div className={isOpen ? 'list show' : 'list'}>
             <h2>
                 {title}
                 <img className={isOpen ? 'btn rotate' : 'btn'} src={arrow} alt='flèche' onClick={handleClick} />
             </h2>
             <div className={isOpen ? 'toggle open' : 'toggle'}>
-                <p className='message'>{message}</p>
+                <p className={isOpen ? 'message visible' : 'message'}>{message}</p>
             </div>
         </div>   
     )
