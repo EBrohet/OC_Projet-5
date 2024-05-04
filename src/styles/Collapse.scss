@@ -1,11 +1,10 @@
 .collapse{
     display: flex;
     padding: 0;
-    max-width: 1240px;
-    
+   
     .list{
         width: 100%;
-        margin-bottom: -2px;
+        transition: margin-bottom 0.8s ease-in-out;
 
         h2{
             list-style: none;
@@ -34,33 +33,42 @@
         .toggle{
             position: relative;
             top: -52px;
-            max-height: 52px;
-            overflow: hidden;
-            transition: max-height 1s ease-in-out;
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.8s ease-in-out;
 
             .message{
                 background-color: #F6F6F645;
                 border-radius: 10px 10px 5px 5px;
-                padding: 77px 28px 20px 20px;
+                padding: 0 28px 0 20px;
                 font-size: 18px;
                 margin: 0;
                 z-index: -1;
                 position: relative;
+                overflow: hidden;
+                transition: padding 0.8s ease-in-out;
             }
         }
 
         .open{
-            max-height: 800px;
+            grid-template-rows: 1fr;
+
+            .visible{
+                padding: 77px 28px 20px 20px;
+            }
         }
+    }
+
+    .show{
+        margin-bottom: -52px;
     }
 }
 
 .equip{
-    margin: 24px 100px 0px 100px;
+    margin: 24px 100px 50px 100px;
     gap: 76px;
 
     .list{
-
         h2{
             padding-left: 10px;
         }
@@ -72,12 +80,11 @@
 }
 
 .about{
-    margin: 0 208.5px 8px 208.5px;
+    margin: 0 208.5px 38px 208.5px;
     flex-direction: column;
+    gap: 30px;
 
-    .list{
-        margin-bottom: -22px;
-        
+    .list{     
         h2{
             padding-left: 15px;
         }
@@ -89,8 +96,6 @@
 @media (max-width: 768px) {
     .collapse{
         .list{
-            margin-bottom: -10px;
-
             h2{  
                 font-size: 13px;
                 padding-right: 12px;
@@ -104,27 +109,33 @@
 
             .toggle{
                 top: -30px;
-                max-height: 30px;
                 
                 .message{        
-                    padding: 43px 20px 19px 20px;
+                    padding: 0px 20px 0px 20px;
                     font-size: 12px;         
                 }
             }
 
             .open{
-                max-height: 800px;
+                .visible{
+                    padding: 43px 20px 19px 20px;
+                }
             }
+        }
+
+        .show{
+            margin-bottom: -30px;
         }
     }
 
     .equip{
-        margin: 13px 20px 7px 20px;
+        margin: 13px 20px 27px 20px;
         flex-direction: column;
-        gap: 0;
+        gap: 20px;
     }
 
     .about{
-        margin: 19px 19.5px -1px 19.5px;
+        margin: 19px 19.5px;
+        gap: 20px;
     }
 }
